@@ -104,7 +104,38 @@
     .gallery img{height:190px;object-fit:cover}
 
     footer{padding:40px 24px;color:#cbd5e1;background:#0b1220;border-top:1px solid #1f2937}
-    .foot{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:start;max-width:var(--max);margin:0 auto}
+.foot {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 24px;
+  align-items: start;
+  max-width: var(--max);
+  margin: 0 auto;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footer-brand .brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-brand h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.footer-brand p {
+  margin-top: 12px; /* pushes "All rights reserved" below logo */
+  color: #9aa5b1;
+  font-size: 14px;
+}
+
     .social{display:flex;gap:10px}
     .social a{border:1px solid #1f2937;padding:10px;border-radius:12px}
 
@@ -138,22 +169,37 @@
         display: none; /* Hide the old placeholder if you don't remove the class */
     }
     /* Styling for Social Icons in the Footer */
-.social a {
-  /* Inherits existing border and padding from your .social a style */
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.25rem; /* Makes icons larger */
-  color: var(--text); /* Default icon color (e.g., light gray/white) */
-  transition: color 0.2s; /* Smooth hover transition */
+/* ADD THIS BLOCK INSIDE your existing <style> tag */
+    .social {
+  display: flex;
+  gap: 12px;
 }
 
-/* Hover effect: change color to your brand color */
-.social a:hover {
-  color: var(--brand); /* Your orange brand color */
+.social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #1f2937; /* dark background */
+  color: var(--text);
+  transition: all 0.3s ease;
 }
+
+.social a:hover {
+  background: var(--brand);
+  color: #fff;
+}
+
+.social a i {
+  font-size: 20px;
+  line-height: 1;
+}
+
   </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+VegovlXwFfS8REI9NTYsa9/zJ1+8gydlsX0GVi8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 <body>
   <header class="container">
@@ -211,7 +257,7 @@
           <p><strong>₹20</strong> / cup</p>
         </article>
         <article class="card">
-          <img src="images/Snack.jpeg"  alt="Indian Snacks - Samosa, Vada Pav, and Poha" />
+          <img src="images/Snack.jpeg"  alt="Indian Snacks" />
           <h4>Snacks</h4>
           <p>Samosa, Vada Pav, Poha & more.</p>
           <p><strong>₹30</strong> onwards</p>
@@ -233,36 +279,39 @@
     </section>
   </main>
 
-  <footer id="contact">
-    <div class="foot">
-      <div>
-        <div class="brand" style="margin-bottom:10px">
-          <a href="/" class="logo-link">
-            <img src="images/logo.png" alt="Ghadge Amrutulya Chah Logo" class="logo-image">
-          </a>
-          <h1>Ghadge Amrutulya Chah</h1>
-        </div>
-        <p style="color:#9aa5b1">© <span id="year"></span> Ghadge Amrutulya Chah. All rights reserved.</p>
+<footer id="contact">
+  <div class="foot">
+    <div class="footer-brand">
+      <div class="brand" style="margin-bottom:10px">
+        <a href="/" class="logo-link">
+          <img src="images/logo.png" alt="Ghadge Amrutulya Chah Logo" class="logo-image">
+        </a>
+        <h1>Ghadge Amrutulya Chah</h1>
       </div>
-      <div>
-        <h4>Contact Us</h4>
-        <p>123 Market Road, Shevgaon, Maharashtra</p>
-        <p><strong>Phone:</strong> +91 98765 43210</p>
-        <p><strong>Email:</strong> ghadgechai@example.com</p>
-       <div class="social">
-  <a href="#" target="_blank" aria-label="Follow us on Instagram">
-    <i class="fab fa-instagram"></i>
-  </a>
-  <a href="#" target="_blank" aria-label="Follow us on Facebook">
-    <i class="fab fa-facebook-f"></i>
-  </a>
-  <a href="#" target="_blank" aria-label="Subscribe to our YouTube Channel">
-    <i class="fab fa-youtube"></i>
-  </a>
-</div>
+      <p class="copyright">
+        © <span id="year"></span> Ghadge Amrutulya Chah. All rights reserved.
+      </p>
+    </div>
+    <div>
+      <h4>Contact Us</h4>
+      <p>123 Market Road, Shevgaon, Maharashtra</p>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+      <p><strong>Email:</strong> ghadgechai@example.com</p>
+      <div class="social">
+        <a href="https://www.instagram.com/_ghadge_amruttulya_/" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61580368385813" target="_blank" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.youtube.com/@AmruttulyaGhadge" target="_blank" aria-label="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
       </div>
     </div>
-  </footer>
+  </div>
+</footer>
+
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
