@@ -10,7 +10,8 @@
   <meta name="author" content="Ghadge Amrutulya Chah" />
 
   <link rel="canonical" href="https://ghadgeamruttulyachah.in/" />
-    <link rel="icon" type="image/png" href="images/logo.png">
+    
+  <link rel="icon" type="image/png" href="images/logo.png" sizes="96x96">
 
   <meta property="og:title" content="Ghadge Amrutulya Chah | Best Tea & Breakfast in Shevgaon" />
   <meta property="og:description" content="Enjoy authentic Amrutulya chai, snacks, and the best breakfast experience in Shevgaon at Ghadge Amrutulya Chah." />
@@ -136,7 +137,23 @@
         /* width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,var(--brand),var(--brand-2));display:grid;place-items:center;color:#0b1220;font-weight:800 */
         display: none; /* Hide the old placeholder if you don't remove the class */
     }
+    /* Styling for Social Icons in the Footer */
+.social a {
+  /* Inherits existing border and padding from your .social a style */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem; /* Makes icons larger */
+  color: var(--text); /* Default icon color (e.g., light gray/white) */
+  transition: color 0.2s; /* Smooth hover transition */
+}
+
+/* Hover effect: change color to your brand color */
+.social a:hover {
+  color: var(--brand); /* Your orange brand color */
+}
   </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+VegovlXwFfS8REI9NTYsa9/zJ1+8gydlsX0GVi8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <header class="container">
@@ -232,10 +249,17 @@
         <p>123 Market Road, Shevgaon, Maharashtra</p>
         <p><strong>Phone:</strong> +91 98765 43210</p>
         <p><strong>Email:</strong> ghadgechai@example.com</p>
-        <div class="social">
-          <a href="#" aria-label="Instagram">IG</a>
-          <a href="#" aria-label="Facebook">FB</a>
-        </div>
+       <div class="social">
+  <a href="#" target="_blank" aria-label="Follow us on Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="#" target="_blank" aria-label="Follow us on Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="#" target="_blank" aria-label="Subscribe to our YouTube Channel">
+    <i class="fab fa-youtube"></i>
+  </a>
+</div>
       </div>
     </div>
   </footer>
@@ -245,6 +269,7 @@
   </script>
 </body>
 </html>
+
 
 
 
