@@ -44,7 +44,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  
+    
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+VegovlXwFfS8REI9NTYsa9/zJ1+8gydlsX0GVi8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <style>
@@ -109,7 +109,7 @@
     .foot{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:start;max-width:var(--max);margin:0 auto}
     .social{display:flex;gap:10px}
     
-    /* REFINED SOCIAL LINK CONTAINER STYLES */
+    /* REFINED: Styles for the social link containers (the circles) */
     .social a {
       border: 1px solid #1f2937; 
       padding: 10px; 
@@ -145,12 +145,10 @@
     
     /* Remove or modify the old .logo styles (if you want to get rid of the 'GA' box styling) */
     .logo{
-        /* Remove or comment out: */
-        /* width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,var(--brand),var(--brand-2));display:grid;place-items:center;color:#0b1220;font-weight:800 */
         display: none; /* Hide the old placeholder if you don't remove the class */
     }
     
-    /* SOCIAL ICON FIX: This block is the solution for the missing icons */
+    /* 2. SOCIAL ICON FIX: This block is the essential fix */
     .social a i {
         /* This is essential: it tells the browser to use the Font Awesome font */
         font-family: "Font Awesome 6 Brands"; 
