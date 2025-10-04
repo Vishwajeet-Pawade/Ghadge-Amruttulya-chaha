@@ -1,16 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+      xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
+  <!-- Home page -->
+  <url>
+    <loc>https://ghadgeamruttulyachah.in/</loc>
+    <lastmod>2025-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
 
-<url>
-  <loc>https://ghadgeamruttulyachah.in/</loc>
-  <lastmod>2025-09-21T12:47:25+00:00</lastmod>
-</url>
+  <!-- Menu Section -->
+  <url>
+    <loc>https://ghadgeamruttulyachah.in/#menu</loc>
+    <lastmod>2025-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
 
+    <image:image>
+      <image:loc>https://ghadgeamruttulyachah.in/images/Special%20tea.png</image:loc>
+      <image:caption>Amrutulya Special Tea</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ghadgeamruttulyachah.in/images/tea.jpeg</image:loc>
+      <image:caption>Masala Chai</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ghadgeamruttulyachah.in/images/Snack.jpeg</image:loc>
+      <image:caption>Indian Snacks</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Gallery Section -->
+  <url>
+    <loc>https://ghadgeamruttulyachah.in/#gallery</loc>
+    <lastmod>2025-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+
+    <image:image>
+      <image:loc>https://vishwajeet-pawade.github.io/Ghadge-Amruttulya-chaha/images/teashop.jpeg</image:loc>
+      <image:caption>Cup of Tea</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://img.youtube.com/vi/0ELhYRBg9f4/hqdefault.jpg</image:loc>
+      <image:caption>YouTube Shorts Video</image:caption>
+    </image:image>
+
+  </url>
 
 </urlset>
